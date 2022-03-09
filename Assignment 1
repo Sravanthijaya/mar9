@@ -1,0 +1,18 @@
+str=input("Enter string:")
+l=0
+u=0
+d=0
+a=0
+for i in str:
+      if(i.islower()):
+            l=l+1
+      elif(i.isupper()):
+            u=u+1
+      elif(i.isdigit()):
+          d=d+1
+      elif(i.alphabetic()):
+         a=a+1
+print(l)
+print(u)
+print(d)
+print(a)
