@@ -1,18 +1,30 @@
+
 str=input("Enter string:")
 l=0
 u=0
 d=0
 a=0
 for i in str:
-      if(i.islower()):
-            l=l+1
-      elif(i.isupper()):
-            u=u+1
-      elif(i.isdigit()):
-          d=d+1
-      elif(i.alphabetic()):
+    if(i.isdigit()):
+        d=d+1
+    elif(i.isalpha()):
          a=a+1
+         if(i.islower()):
+            l=l+1
+         elif(i.isupper()):
+             u=u+1
+    else:
+        continue
 print(l)
 print(u)
 print(d)
 print(a)
+
+
+Output:
+Enter string:abcDEFG12345
+3
+4
+5
+7
+> 
